@@ -1,0 +1,19 @@
+{
+  "name": "rudderrave/yii2-rave-menu",
+  "description": "Menu Module For Yee CMS",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Rudder Rave",
+      "email": "rudder.rave@gmail.com"
+    }
+  ],
+  "require": {
+    "ravesoft/yii2-rave-core-rest": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "ravesoft\\menu\\": ""
+    }
+  }
+}
