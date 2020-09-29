@@ -5,7 +5,7 @@ namespace ravesoft\menu\controllers;
 use ravesoft\controllers\admin\BaseController;
 use Yii;
 use yii\helpers\StringHelper;
-use ravesoft\helpers\YeeHelper;
+use ravesoft\helpers\RaveHelper;
 use ravesoft\models\OwnerAccess;
 use ravesoft\models\User;
 use yii\helpers\ArrayHelper;
@@ -58,7 +58,7 @@ class DefaultController extends BaseController
         $searchModel = $this->modelSearchClass ? new $this->modelSearchClass : null;
         $searchLinkModel = $this->modelLinkSearchClass ? new $this->modelLinkSearchClass : null;
 
-        $restrictAccess = (YeeHelper::isImplemented($modelClass, OwnerAccess::CLASSNAME)
+        $restrictAccess = (RaveHelper::isImplemented($modelClass, OwnerAccess::CLASSNAME)
             && !User::hasPermission($modelClass::getFullAccessPermission()));
 
         if ($searchModel) {

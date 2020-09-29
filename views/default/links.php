@@ -11,11 +11,11 @@ $queryParams  = Yii::$app->getRequest()->getQueryParams();
 
 <?php if (empty($queryParams)): ?>
     <h4>
-        <?= Yii::t('yee/menu', 'Please, select menu to view menu links...') ?>
+        <?= Yii::t('rave/menu', 'Please, select menu to view menu links...') ?>
     </h4>
 <?php elseif (!isset($parentId) && $dataProvider->count == 0): ?>
     <h4>
-        <?= Yii::t('yee/menu', 'Selected menu doesn\'t contain any link. Click "Add New Link" to create a link for this menu.') ?>
+        <?= Yii::t('rave/menu', 'Selected menu doesn\'t contain any link. Click "Add New Link" to create a link for this menu.') ?>
     </h4>
 <?php else: ?>
     <?=

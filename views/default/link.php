@@ -20,9 +20,9 @@ use ravesoft\helpers\FA;
         <span class="menu-link"><?= (empty($model->link)?"(no link)":"[{$model->link}]") ?></span>
     </div>
     <div class="menu-link-actions">
-        <?= Html::a('['.Yii::t('yee', 'Edit').']', ['/menu/link/update', 'id' => $model->id], ['data-pjax' => 0]) ?>
+        <?= Html::a('['.Yii::t('rave', 'Edit').']', ['/menu/link/update', 'id' => $model->id], ['data-pjax' => 0]) ?>
         <br/>
-            <?= Html::a('['.Yii::t('yee', 'Delete').']', ['/menu/link/delete', 'id' => $model->id], [
+            <?= Html::a('['.Yii::t('rave', 'Delete').']', ['/menu/link/delete', 'id' => $model->id], [
                     'data-confirm' => Yii::t('yii', 'Are you sure you want to delete this item?'),
                     'data-method' => 'post',
                     'data-pjax' => '0',

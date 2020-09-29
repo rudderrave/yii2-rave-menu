@@ -6,7 +6,7 @@ use yii\web\AssetBundle;
 
 class MenuAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/ravesoft/yii2-yee-menu/assets/source';
+    public $sourcePath = '@vendor/ravesoft/yii2-rave-menu/assets/source';
     public $css = [
         'css/menu.css',
     ];

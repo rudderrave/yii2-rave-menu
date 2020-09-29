@@ -55,13 +55,13 @@ use ravesoft\widgets\LanguagePills;
                         <div class="form-group">
                             <?php if ($model->isNewRecord): ?>
 
-                                <?= Html::submitButton(Yii::t('yee', 'Create'), ['class' => 'btn btn-primary']) ?>
-                                <?= Html::a(Yii::t('yee', 'Cancel'), ['/menu/default/index'], ['class' => 'btn btn-default']) ?>
+                                <?= Html::submitButton(Yii::t('rave', 'Create'), ['class' => 'btn btn-primary']) ?>
+                                <?= Html::a(Yii::t('rave', 'Cancel'), ['/menu/default/index'], ['class' => 'btn btn-default']) ?>
 
                             <?php else: ?>
 
-                                <?= Html::submitButton(Yii::t('yee', 'Save'), ['class' => 'btn btn-primary']) ?>
-                                <?= Html::a(Yii::t('yee', 'Delete'), ['/menu/default/delete', 'id' => $model->id], [
+                                <?= Html::submitButton(Yii::t('rave', 'Save'), ['class' => 'btn btn-primary']) ?>
+                                <?= Html::a(Yii::t('rave', 'Delete'), ['/menu/default/delete', 'id' => $model->id], [
                                     'class' => 'btn btn-default',
                                     'data' => [
                                         'confirm' => Yii::t('yii', 'Are you sure you want to delete this item?'),

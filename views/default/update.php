@@ -5,8 +5,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model ravesoft\menu\models\Menu */
 
-$this->title = Yii::t('yee', 'Update "{item}"', ['item' => $model->title]);
-$this->params['breadcrumbs'][] = ['label' => Yii::t('yee/menu', 'Menus'), 'url' => ['index']];
+$this->title = Yii::t('rave', 'Update "{item}"', ['item' => $model->title]);
+$this->params['breadcrumbs'][] = ['label' => Yii::t('rave/menu', 'Menus'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="menu-update">

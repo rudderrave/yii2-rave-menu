@@ -5,8 +5,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model ravesoft\menu\models\MenuLink */
 
-$this->title = Yii::t('yee/menu', 'Create Menu Link');
-$this->params['breadcrumbs'][] = ['label' => Yii::t('yee/menu', 'Menus'), 'url' => ['/menu/default/index']];
+$this->title = Yii::t('rave/menu', 'Create Menu Link');
+$this->params['breadcrumbs'][] = ['label' => Yii::t('rave/menu', 'Menus'), 'url' => ['/menu/default/index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 

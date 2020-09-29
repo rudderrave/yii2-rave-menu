@@ -6,7 +6,7 @@ use ravesoft\models\MenuLink;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use ravesoft\helpers\YeeHelper;
+use ravesoft\helpers\RaveHelper;
 use ravesoft\models\OwnerAccess;
 use ravesoft\models\User;
 
@@ -66,7 +66,7 @@ class SearchMenuLink extends MenuLink
             $this->$key = $value;
         }
 
-        $restrictLinkAccess = (YeeHelper::isImplemented(MenuLink::className(), OwnerAccess::CLASSNAME)
+        $restrictLinkAccess = (RaveHelper::isImplemented(MenuLink::className(), OwnerAccess::CLASSNAME)
             && !User::hasPermission(MenuLink::getFullAccessPermission()));
 
         if (!$this->validate()) {

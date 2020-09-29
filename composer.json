@@ -1,10 +1,10 @@
 {
   "name": "rudderrave/yii2-rave-menu",
-  "description": "Menu Module For Yee CMS",
+  "description": "Menu Module For Rave CMS&ERP",
   "license": "Apache-2.0",
   "authors": [
     {
-      "name": "Rudder Rave",
+      "name": "Rave",
       "email": "rudder.rave@gmail.com"
     }
   ],

@@ -11,7 +11,7 @@ use yii\bootstrap\Alert;
 /* @var $searchModel ravesoft\menu\models\search\SearchMenu */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title                   = Yii::t('yee/menu', 'Menus');
+$this->title                   = Yii::t('rave/menu', 'Menus');
 $this->params['breadcrumbs'][] = $this->title;
 
 MenuAsset::register($this);
@@ -21,8 +21,8 @@ MenuAsset::register($this);
     <div class="row">
         <div class="col-sm-12">
             <h3 class="lte-hide-title page-title"><?= Html::encode($this->title) ?></h3>
-            <?= Html::a(Yii::t('yee/menu', 'Add New Menu'), ['/menu/default/create'], ['class' => 'btn btn-sm btn-primary']) ?>
-            <?= Html::a(Yii::t('yee/menu', 'Add New Link'), ['/menu/link/create'], ['class' => 'btn btn-sm btn-primary']) ?>
+            <?= Html::a(Yii::t('rave/menu', 'Add New Menu'), ['/menu/default/create'], ['class' => 'btn btn-sm btn-primary']) ?>
+            <?= Html::a(Yii::t('rave/menu', 'Add New Link'), ['/menu/link/create'], ['class' => 'btn btn-sm btn-primary']) ?>
 
             <?= Alert::widget([
                 'options' => ['class' => 'alert-primary menu-link-alert'],
@@ -31,12 +31,12 @@ MenuAsset::register($this);
 
             <?= Alert::widget([
                 'options' => ['class' => 'alert-danger menu-link-alert'],
-                'body' => Yii::t('yee/menu', 'An error occurred during saving menu!'),
+                'body' => Yii::t('rave/menu', 'An error occurred during saving menu!'),
             ]) ?>
             
             <?= Alert::widget([
                 'options' => ['class' => 'alert-info menu-link-alert'],
-                'body' => Yii::t('yee/menu', 'The changes have been saved.'),
+                'body' => Yii::t('rave/menu', 'The changes have been saved.'),
             ]) ?>
         </div>
     </div>

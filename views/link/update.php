@@ -9,8 +9,8 @@ use yii\helpers\StringHelper;
 
 $formName = StringHelper::basename(SearchMenuLink::className());
 
-$this->title = Yii::t('yee/menu', 'Update Menu Link');
-$this->params['breadcrumbs'][] = ['label' => Yii::t('yee/menu', 'Menus'), 'url' => ['/menu/default/index']];
+$this->title = Yii::t('rave/menu', 'Update Menu Link');
+$this->params['breadcrumbs'][] = ['label' => Yii::t('rave/menu', 'Menus'), 'url' => ['/menu/default/index']];
 $this->params['breadcrumbs'][] = ['label' => $model->menu->title, 'url' => ['/menu/default/index', "{$formName}[menu_id]" => $model->menu_id]];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
