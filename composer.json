@@ -9,7 +9,7 @@
     }
   ],
   "require": {
-    "ravesoft/yii2-rave-core-rest": "dev-master"
+    "rudderrave/yii2-rave-core-rest": "dev-master"
   },
   "autoload": {
     "psr-4": {
